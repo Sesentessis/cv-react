@@ -1,6 +1,6 @@
-import React, { ReactNode } from "react";
-import listItemIcon from "../assets/icons/bullet.svg";
-import { Heading } from "./Heading";
+import React, { ReactNode } from 'react';
+import listItemIcon from '../assets/icons/bullet.svg';
+import { Heading } from './Heading';
 
 type CourseItemProps = {
   icon?: string;

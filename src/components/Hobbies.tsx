@@ -1,10 +1,10 @@
-import { Heading } from "./Heading";
-import diving from "../assets/icons/diving.svg";
-import draving from "../assets/icons/draving.svg";
-import skis from "../assets/icons/skis.svg";
-import dance from "../assets/icons/dance.svg";
-import games from "../assets/icons/games.svg";
-import React, { ReactNode } from "react";
+import { Heading } from './Heading';
+import diving from '../assets/icons/diving.svg';
+import draving from '../assets/icons/draving.svg';
+import skis from '../assets/icons/skis.svg';
+import dance from '../assets/icons/dance.svg';
+import games from '../assets/icons/games.svg';
+import React, { ReactNode } from 'react';
 
 type HobbyProps = {
   className: string;

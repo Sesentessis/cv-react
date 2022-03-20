@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import { Heading } from "./Heading";
+import React, { ReactNode } from 'react';
+import { Heading } from './Heading';
 
 type KnowledgePercentageProps = {
   skill: ReactNode;
