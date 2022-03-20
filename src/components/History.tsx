@@ -1,5 +1,5 @@
-import React from "react";
-import { Heading } from "./Heading";
+import React from 'react';
+import { Heading } from './Heading';
 export const History = () => (
   <>
     <Heading name="Historia"></Heading>

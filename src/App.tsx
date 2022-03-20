@@ -1,14 +1,14 @@
-import "./App.css";
-import { Header } from "./components/Header";
-import { History } from "./components/History";
-import { Education } from "./components/Education";
-import { Courses } from "./components/Courses";
-import { Strengths } from "./components/Strengths";
-import { Skills } from "./components/Skills";
-import { About } from "./components/About";
-import { Hobbies } from "./components/Hobbies";
-import { MyPhoto } from "./components/MyPhoto";
-import React from "react";
+import './App.css';
+import { Header } from './components/Header';
+import { History } from './components/History';
+import { Education } from './components/Education';
+import { Courses } from './components/Courses';
+import { Strengths } from './components/Strengths';
+import { Skills } from './components/Skills';
+import { About } from './components/About';
+import { Hobbies } from './components/Hobbies';
+import { MyPhoto } from './components/MyPhoto';
+import React from 'react';
 const App = () => (
   <div className="App">
     <Header />
