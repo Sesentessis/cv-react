@@ -4,8 +4,16 @@ import draving from "../assets/icons/draving.svg";
 import skis from "../assets/icons/skis.svg";
 import dance from "../assets/icons/dance.svg";
 import games from "../assets/icons/games.svg";
+import React, { ReactNode } from "react";
 
-const Hobby = ({ className, content, icon, alt }) => (
+type HobbyProps = {
+  className: string;
+  content: ReactNode;
+  icon: string;
+  alt: string;
+};
+
+const Hobby = ({ className, content, icon, alt }: HobbyProps) => (
   <div className={`hobby ${className}`}>
     <div>
       <img className="hobby-img" src={icon} alt={alt} />

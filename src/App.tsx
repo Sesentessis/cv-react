@@ -8,6 +8,7 @@ import { Skills } from "./components/Skills";
 import { About } from "./components/About";
 import { Hobbies } from "./components/Hobbies";
 import { MyPhoto } from "./components/MyPhoto";
+import React from "react";
 const App = () => (
   <div className="App">
     <Header />
