@@ -1,5 +1,6 @@
 import phone from "../assets/icons/phone.svg";
 import mailBox from "../assets/icons/mailBox.svg";
+import React from "react";
 
 export const Header = () => (
   <header className="App-header">

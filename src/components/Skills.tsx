@@ -1,6 +1,15 @@
+import React, { ReactNode } from "react";
 import { Heading } from "./Heading";
 
-const KnowledgePercentage = ({ skill, percentage }) => (
+type KnowledgePercentageProps = {
+  skill: ReactNode;
+  percentage: string;
+};
+
+const KnowledgePercentage = ({
+  skill,
+  percentage,
+}: KnowledgePercentageProps) => (
   <div>
     <p>{skill}</p>
     <div className="w3-light w3-round-xlarge">

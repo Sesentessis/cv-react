@@ -1,3 +1,4 @@
+import React from "react";
 import myPhoto from "../assets/images/cv-photo.jpg";
 export const MyPhoto = () => (
   <div id="photo">
