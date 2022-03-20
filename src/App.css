@@ -1,38 +1,209 @@
-.App {
+body {
+  background-color: #e6e6e6;
+}
+@font-face {
+  font-family: Berlin;
+  src: url(assets/fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf);
+}
+@font-face {
+  font-family: Bahnschrift;
+  src: url(assets/fonts/BAHNSCHRIFT.TTF);
+}
+.App-header {
+  display: grid;
+  grid-template: auto/ 50vw 1fr;
+  padding: 1em;
+}
+.name {
+  grid-area: 1 / 1 / 2 / 2;
+  max-width: 200px;
+  color: #b79193;
+  font-family: Berlin;
+  font-size: 42px;
+}
+.fontBahnschrift {
+  font-family: Bahnschrift;
+}
+.contact {
+  display: grid;
+  grid-template: 30px 30px/ 30px 1fr;
+  row-gap: 5px;
+  grid-column: 2;
+  height: 65px;
+  margin-top: 1em;
+}
+.content {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Bahnschrift;
+  padding: 10px 0;
+}
+.content p {
+  margin-bottom: 20px;
+}
+.content p:last-child {
+  margin-bottom: 0;
+}
+.narrow p {
+  margin-bottom: 0;
+}
+
+.contact div:first-child {
+  grid-area: 1/1/2/2;
+}
+.contact div:nth-child(2) {
+  grid-area: 1/2/2/3;
+  padding: 7px 5px;
+}
+.contact div:nth-child(3) {
+  grid-area: 2/1/3/2;
+}
+.contact div:last-child {
+  grid-area: 2/2/3/3;
+  padding: 7px 5px;
+}
+
+.App-header img {
+  height: 30px;
+  width: 30px;
+}
+
+#cv {
+  display: grid;
+  grid-template: 3fr 0.5fr / 40% 60%;
+  margin: 1em;
+}
+.indent {
+  height: 10px;
+}
+#leftsection {
+  grid-area: 1 / 1 / 3 / 2;
+  margin-right: 1em;
+}
+#rightsection {
+  grid-area: 1 / 2 / 3 / 3;
+  margin-left: 1em;
+}
+.cv-heading {
+  font-size: 15pt;
+  color: #b79193;
+  font-family: Bahnschrift;
+  border-bottom: 2px solid #b79193;
+}
+
+#hobbieswrapper {
+  grid-area: 3 / 1 / span 1 / 3;
+}
+
+.hobby {
+  display: grid;
+}
+
+.hobby-img {
+  height: 90px;
+}
+
+#hobbies {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  /* display: grid;
+  grid-template-columns: 90px 1fr 90px 1fr 90px 1fr 90px 1fr 90px;
+  margin: 10px 0; */
+}
+.diver {
+  grid-column: 1;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.draving {
+  grid-column: 3;
+  text-align: center;
+}
+.skis {
+  grid-column: 5;
+  text-align: center;
+}
+.dance {
+  grid-column: 7;
+  text-align: center;
+}
+.games {
+  grid-column: 9;
+  text-align: center;
+}
+#photo {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#photoofme {
+  max-width: 75%;
+  border-radius: 50%;
+  border: 4px solid #b79193;
+  outline: 6px solid #b79193;
+  outline-offset: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#hobbieswrapper p {
+  color: #706f6f;
+}
+#bars {
+  font-size: 12pt;
+  line-height: 30px;
+  font-family: Bahnschrift;
+}
+.w3-light {
+  background-color: #c7c7c7;
+  width: 50%;
+}
+.w3-round-xlarge {
+  border-radius: 16px;
+}
+.w3-salmon {
+  background-color: #b79193;
+}
+#bars {
+  padding: 10px 0;
+}
+.size {
+  height: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  #cv {
+    grid-template: auto auto auto / 1fr;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App-header {
+    grid-template: auto auto/ 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .name {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 100%;
+  }
+  .contact {
+    grid-area: 2/1/3/2;
+    margin-top: 10px;
+  }
+  #rightsection {
+    grid-area: 2/ 1 / 3 / 2;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #leftsection {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-right: 0;
+  }
+  .hobby-img {
+    height: 60px;
+  }
+  #hobbies {
+    grid-template-columns: 60px 1fr 60px 1fr 60px 1fr 60px 1fr 60px;
+  }
+  .content {
+    font-size: 16px;
+  }
+  #hobbieswrapper div.content,
+  #hobbieswrapper p.content {
+    font-size: 11px;
+    line-height: 18px;
   }
 }
