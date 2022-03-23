@@ -1,41 +1,45 @@
 body {
   background-color: #e6e6e6;
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 22px;
 }
 @font-face {
   font-family: Berlin;
   src: url(assets/fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf);
 }
-@font-face {
-  font-family: Bahnschrift;
-  src: url(assets/fonts/BAHNSCHRIFT.TTF);
-}
+
 .App-header {
   display: grid;
-  grid-template: auto/ 50vw 1fr;
+  grid-template: auto/ 40vw 2fr 1.5fr;
   padding: 1em;
+}
+.toaboutlink {
+  grid-column: 3;
+  grid-row: 1/3;
+  display: flex;
+  align-self: center;
+  font-size: 25px;
+  align-items: center;
 }
 .name {
   grid-area: 1 / 1 / 2 / 2;
   max-width: 200px;
   color: #b79193;
+  line-height: 50px;
   font-family: Berlin;
   font-size: 42px;
 }
-.fontBahnschrift {
-  font-family: Bahnschrift;
-}
+
 .contact {
   display: grid;
   grid-template: 30px 30px/ 30px 1fr;
   row-gap: 5px;
   grid-column: 2;
   height: 65px;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 .content {
-  font-size: 18px;
-  line-height: 22px;
-  font-family: Bahnschrift;
   padding: 10px 0;
 }
 .content p {
@@ -85,9 +89,9 @@ body {
   margin-left: 1em;
 }
 .cv-heading {
-  font-size: 15pt;
+  font-size: 20pt;
+  line-height: 25pt;
   color: #b79193;
-  font-family: Bahnschrift;
   border-bottom: 2px solid #b79193;
 }
 
@@ -97,6 +101,7 @@ body {
 
 .hobby {
   display: grid;
+  padding: 10px;
 }
 
 .hobby-img {
@@ -106,10 +111,7 @@ body {
 #hobbies {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
-  /* display: grid;
-  grid-template-columns: 90px 1fr 90px 1fr 90px 1fr 90px 1fr 90px;
-  margin: 10px 0; */
+  margin: 15px 0;
 }
 .diver {
   grid-column: 1;
@@ -149,11 +151,9 @@ body {
 #bars {
   font-size: 12pt;
   line-height: 30px;
-  font-family: Bahnschrift;
 }
 .w3-light {
   background-color: #c7c7c7;
-  width: 50%;
 }
 .w3-round-xlarge {
   border-radius: 16px;
@@ -173,7 +173,12 @@ body {
     grid-template: auto auto auto / 1fr;
   }
   .App-header {
-    grid-template: auto auto/ 1fr;
+    grid-template: auto auto auto/ 1fr;
+  }
+  .toaboutlink {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 20px;
   }
   .name {
     grid-area: 1 / 1 / 2 / 2;
@@ -182,6 +187,7 @@ body {
   .contact {
     grid-area: 2/1/3/2;
     margin-top: 10px;
+    font-size: 15px;
   }
   #rightsection {
     grid-area: 2/ 1 / 3 / 2;
@@ -192,12 +198,16 @@ body {
     grid-area: 1 / 1 / 2 / 2;
     margin-right: 0;
   }
+  #hobbies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
   .hobby-img {
     height: 60px;
   }
-  #hobbies {
-    grid-template-columns: 60px 1fr 60px 1fr 60px 1fr 60px 1fr 60px;
-  }
+
   .content {
     font-size: 16px;
   }

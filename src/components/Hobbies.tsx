@@ -18,7 +18,7 @@ const Hobby = ({ className, content, icon, alt }: HobbyProps) => (
     <div>
       <img className="hobby-img" src={icon} alt={alt} />
     </div>
-    <div className="content">{content}</div>
+    <div>{content}</div>
   </div>
 );
 

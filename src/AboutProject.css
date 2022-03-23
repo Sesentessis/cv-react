@@ -1,0 +1,69 @@
+body {
+  font-size: 18px;
+  line-height: 22px;
+}
+.abouthedding {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  color: #b79193;
+  line-height: 65px;
+  border-bottom: 2px solid #b79193;
+  padding: 10px;
+}
+.issuetitle {
+  font-size: 30px;
+}
+#issuewrapper {
+  display: grid;
+  grid-template: auto / 1fr 5fr;
+}
+#issuewrapper p:first-child {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.leftsidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  margin-top: 20px;
+  grid-column: 1;
+}
+
+.description {
+  margin: 10px;
+}
+
+.specifics {
+  grid-column: 2;
+  border-radius: 10px;
+  border: 2px solid #b79193;
+  padding: 20px;
+  margin: 20px 10px;
+
+  line-height: 30px;
+}
+a {
+  color: #b79193;
+}
+a:hover {
+  color: #c49ad1;
+}
+.tocvlink {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+@media only screen and (max-width: 767px) {
+  #issuewrapper {
+    grid-template: auto / 1fr;
+  }
+  .specifics {
+    grid-column: 1;
+  }
+  .abouthedding {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
