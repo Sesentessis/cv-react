@@ -3,19 +3,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MyUl } from '../components/MyUl';
 import { IoMdArrowDropleftCircle } from 'react-icons/io';
-
+import { GITHUB_REPO } from '../components/Links';
 type IssueProps = {
   date: string;
-  nr: string;
-  link: string;
+  issueNr: number;
 };
 
-const Issue = ({ date, link, nr }: IssueProps) => (
+const Issue = ({ date, issueNr }: IssueProps) => (
   <div>
     <div className="leftsidebar">
       <p>{date}</p>
-      <a href={link} rel="noreferrer">
-        Issue #{nr}
+      <a
+        href={`${GITHUB_REPO}/issues/${issueNr}`}
+        rel="noreferrer"
+        target="_blank"
+      >
+        Issue #{issueNr}
       </a>
     </div>
   </div>
@@ -26,6 +29,10 @@ export const AboutProject = () => (
     <div className="abouthedding">
       <h1>CV wykonane w React & TypeScript</h1>
     </div>
+    <div className="tocvlink">
+      <IoMdArrowDropleftCircle color="#b79193" />
+      <Link to="/">Powrót do CV</Link>
+    </div>
     <div className="description">
       <p>
         Stronę z moim CV przygotowałam w React + TypeScript. Moim mentorem był
@@ -33,23 +40,18 @@ export const AboutProject = () => (
         zmian.
       </p>
       Kod tej strony
-      <a href="https://github.com/Sesentessis/cv-react" rel="noreferrer">
+      <a href={GITHUB_REPO} rel="noreferrer" target="_blank">
         {' '}
         jest dostępny na GitHubie.
       </a>
     </div>
     <div id="issuewrapper">
-      <Issue
-        date={'22.03.2022'}
-        nr={'3'}
-        link={'https://github.com/Sesentessis/cv-react/issues/5'}
-      ></Issue>
+      <Issue date="22.03.2022" issueNr={5} />
       <div className="specifics">
         <div className="issuetitle">
           Title: "As a User i want to see a changelog page that describes this
           project"
         </div>
-
         <MyUl>added React Router to project </MyUl>
         <MyUl>
           added rutes to App() and moved the previous content to separate file
@@ -59,16 +61,11 @@ export const AboutProject = () => (
         <MyUl>added hyperlink to to Github project</MyUl>
         <MyUl>created and styled the list of cards showing progress</MyUl>
       </div>
-      <Issue
-        date={'20.03.2022'}
-        nr={'2'}
-        link={'https://github.com/Sesentessis/cv-react/issues/2'}
-      ></Issue>
+      <Issue date="20.03.2022" issueNr={2} />
       <div className="specifics">
         <div className="issuetitle">
           Title: "Add automatic code formatter settings (prettier)"
         </div>
-
         <MyUl>
           added .prettierrc file with configuration for automatic code
           formatting
@@ -81,25 +78,16 @@ export const AboutProject = () => (
           not UTF-8.
         </MyUl>
       </div>
-      <Issue
-        date={'20.03.2022'}
-        nr={'1'}
-        link={'https://github.com/Sesentessis/cv-react/issues/1'}
-      ></Issue>
+      <Issue date="20.03.2022" issueNr={1} />
       <div className="specifics">
         <div className="issuetitle">
           Title: "Add TypeScript and types to all of the components"
         </div>
-
         <MyUl>added typescript to my React project </MyUl>
         <MyUl>changed types of files </MyUl>
         <MyUl>added types to props off components</MyUl>
         <MyUl>fixed errors</MyUl>
       </div>
-    </div>
-    <div className="tocvlink">
-      <IoMdArrowDropleftCircle color="#b79193" />
-      <Link to="/">Powrót do CV</Link>
     </div>
   </div>
 );
