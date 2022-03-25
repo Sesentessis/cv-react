@@ -6,9 +6,10 @@ body {
   display: flex;
   justify-content: center;
   font-size: 45px;
-  color: #b79193;
+  color: #595959;
+  font-weight: 700;
   line-height: 65px;
-  border-bottom: 2px solid #b79193;
+  border-bottom: 3px solid #0778e9;
   padding: 10px;
 }
 .issuetitle {
@@ -37,19 +38,15 @@ body {
 .specifics {
   grid-column: 2;
   border-radius: 10px;
-  border: 2px solid #b79193;
+  border: 2px solid #0778e9;
   padding: 20px;
   margin: 20px 10px;
   line-height: 30px;
 }
-a {
-  color: #b79193;
-}
-a:hover {
-  color: #c49ad1;
+.tocvlink a {
+  padding-left: 5px;
 }
 .tocvlink {
-  font-size: 25px;
   display: flex;
   align-items: center;
   margin: 20px 10px;

@@ -30,8 +30,10 @@ export const AboutProject = () => (
       <h1>CV wykonane w React & TypeScript</h1>
     </div>
     <div className="tocvlink">
-      <IoMdArrowDropleftCircle color="#b79193" />
-      <Link to="/">Powrót do CV</Link>
+      <IoMdArrowDropleftCircle color="#0778e9" />
+      <Link className="nounderline" to="/">
+        Powrót do CV
+      </Link>
     </div>
     <div className="description">
       <p>

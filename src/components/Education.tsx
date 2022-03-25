@@ -1,14 +1,19 @@
 import React from 'react';
 import { Heading } from './Heading';
+import { MyUl } from './MyUl';
 export const Education = () => (
   <>
-    <Heading name="Edukacja" />
+    <Heading name="Education" />
     <div className="content">
-      <p>IV LO w Białymstoku klasa Mat-Fiz-Inf</p>
-      <p>
-        <strong>Politechnika Warszawska</strong> wydział SiMR Mechatronika
-        Pojazdów i Maszyn Roboczych - aktualnie
-      </p>
+      <div>
+        Mechatronics <span className="bolder">Engineering</span> of Vehicles
+      </div>
+      <p className="font-small">2019-2022 Warsaw University of Technology</p>
+      <div>
+        <MyUl>Basics of C language</MyUl>
+        <MyUl>Simple webpage implementation in JavaScript.</MyUl>
+        <MyUl>Labview project on pathfinding of a robot.</MyUl>
+      </div>
     </div>
   </>
 );

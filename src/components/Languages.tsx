@@ -20,16 +20,12 @@ const KnowledgePercentage = ({
     </div>
   </div>
 );
-export const Skills = () => (
+export const Languages = () => (
   <>
-    <Heading name="Skills" />
+    <Heading name="Languages" />
     <div className="bars">
-      <KnowledgePercentage skill="HTML" percentage="60%" />
-      <KnowledgePercentage skill="CSS" percentage="30%" />
-      <KnowledgePercentage skill="JavaScript" percentage="40%" />
-      <KnowledgePercentage skill="React" percentage="25%" />
-      <KnowledgePercentage skill="LabVIEW" percentage="20%" />
-      <KnowledgePercentage skill="C" percentage="10%" />
+      <KnowledgePercentage skill="Polish [Native]" percentage="100%" />
+      <KnowledgePercentage skill="English [fluent, B2]" percentage="60%" />
     </div>
   </>
 );

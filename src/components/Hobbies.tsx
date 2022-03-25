@@ -1,20 +1,18 @@
 import { Heading } from './Heading';
-import diving from '../assets/icons/diving.svg';
-import draving from '../assets/icons/draving.svg';
-import skis from '../assets/icons/skis.svg';
-import dance from '../assets/icons/dance.svg';
+import diving from '../assets/icons/diver.svg';
+import skydiving from '../assets/icons/sky-diver.svg';
+import skis from '../assets/icons/skier.svg';
 import games from '../assets/icons/games.svg';
 import React, { ReactNode } from 'react';
 
 type HobbyProps = {
-  className: string;
   content: ReactNode;
   icon: string;
   alt: string;
 };
 
-const Hobby = ({ className, content, icon, alt }: HobbyProps) => (
-  <div className={`hobby ${className}`}>
+const Hobby = ({ content, icon, alt }: HobbyProps) => (
+  <div className="hobby font-small">
     <div>
       <img className="hobby-img" src={icon} alt={alt} />
     </div>
@@ -24,46 +22,16 @@ const Hobby = ({ className, content, icon, alt }: HobbyProps) => (
 
 export const Hobbies = () => (
   <div id="hobbieswrapper">
-    <Heading name="Zainteresowania" />
+    <Heading name="Hobbies" />
     <div id="hobbies">
+      <Hobby content="scuba diving" icon={diving} alt="diver icon" />
+      <Hobby content="sky diving" icon={skydiving} alt="sky diver icon" />
+      <Hobby content="skiing" icon={skis} alt="skiing icon" />
       <Hobby
-        className="diver"
-        content="nurkowanie"
-        icon={diving}
-        alt="diver icon"
-      />
-      <Hobby
-        className="draving"
-        content="rysowanie"
-        icon={draving}
-        alt="dvaving icon"
-      />
-      <Hobby
-        className="skis"
-        content="narciarstwo"
-        icon={skis}
-        alt="skiing icon"
-      />
-      <Hobby
-        className="dance"
-        content="taniec"
-        icon={dance}
-        alt="dancer icon"
-      />
-      <Hobby
-        className="games"
-        content="gry"
+        content="board & computer games"
         icon={games}
         alt="controll pad icon"
       />
     </div>
-    <p className="content">
-      Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb
-      niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem
-      Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w
-      sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
-      osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia
-      dyrektywy 95/46/WE (RODO).
-    </p>
   </div>
 );

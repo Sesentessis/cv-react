@@ -6,7 +6,6 @@ import { AboutProject } from './pages/AboutProject';
 
 const App = () => (
   <div className="App">
-    {/* // SMIEC? */}
     <Routes>
       <Route path="/" element={<CV />} />
       <Route path="aboutproject" element={<AboutProject />} />
