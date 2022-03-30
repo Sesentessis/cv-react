@@ -27,25 +27,27 @@ const Issue = ({ date, issueNr }: IssueProps) => (
 export const AboutProject = () => (
   <div>
     <div className="abouthedding">
-      <h1>CV wykonane w React & TypeScript</h1>
+      <h1>CV implemented in React & TypeScript</h1>
     </div>
     <div className="tocvlink">
       <IoMdArrowDropleftCircle color="#0778e9" />
       <Link className="nounderline" to="/">
-        Powrót do CV
+        Back to CV
       </Link>
     </div>
     <div className="description">
       <p>
-        Stronę z moim CV przygotowałam w React + TypeScript. Moim mentorem był
-        Mateusz który planował rozwój jako fake PO i wykonywał code review moich
-        zmian.
+        My CV website I implemented in React + Typescript. My mentor planned
+        Issues for me and I accomplished them one by one. It was meant to
+        simulate working with a PO. Mateusz also code reviewed my changes, as
+        you can see in linked GitHub pull requests.
       </p>
-      Kod tej strony
+      Code is available
       <a href={GITHUB_REPO} rel="noreferrer" target="_blank">
         {' '}
-        jest dostępny na GitHubie.
+        on GitHub
       </a>
+      .
     </div>
     <div id="issuewrapper">
       <Issue date="22.03.2022" issueNr={5} />
@@ -86,7 +88,7 @@ export const AboutProject = () => (
           Title: "Add TypeScript and types to all of the components"
         </div>
         <MyUl>added typescript to my React project </MyUl>
-        <MyUl>changed types of files </MyUl>
+        <MyUl>changed .js files to .ts & .tsx files </MyUl>
         <MyUl>added types to props off components</MyUl>
         <MyUl>fixed errors</MyUl>
       </div>
