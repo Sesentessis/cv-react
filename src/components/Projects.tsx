@@ -28,8 +28,7 @@ export const Projects = () => (
             documentation, implemented from scratch in plain CSS.
           </MyUl>
           <MyUl>
-            First version of this CV page was implemented in pure HTML & CSS,
-            you can <a href="">check it out here.</a>
+            First version of this CV page was implemented in pure HTML & CSS.
           </MyUl>
         </div>
       </div>
